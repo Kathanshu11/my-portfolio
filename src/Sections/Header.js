@@ -1,5 +1,3 @@
-
-
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 export default function Header() {
@@ -7,16 +5,13 @@ export default function Header() {
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
+
+    const closeMenu = () => setIsOpen(false);
+
   };
   return (
     <>
-
-
-
-  
-
- 
-    <nav className="navbar navbar-expand-lg transparent-navbar">
+    <nav className="navbar navbar-expand-lg transparent-navbar fixed-top">
       <div className="container">
         <Link className="navbar-brand" to="/home">
           Kathanshu Portfolio
@@ -27,7 +22,7 @@ export default function Header() {
           className="navbar-toggler"
           type="button"
           onClick={handleToggle}
-          aria-controls="navbarSupportedContent"
+          // aria-controls="navbarSupportedContent"
           aria-expanded={isOpen ? "true" : "false"}
           aria-label="Toggle navigation"
         >
@@ -46,21 +41,21 @@ export default function Header() {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav mx-auto">
-            <li className="nav-item mx-4">
+            <li className="nav-item navigation-links mx-4">
               <Link to="/home" onClick={() => setIsOpen(false)}>Home</Link>
             </li>
-            <li className="nav-item mx-4">
+            <li className="nav-item navigation-links mx-4">
               <Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
             </li>
-            <li className="nav-item mx-4">
+            <li className="nav-item navigation-links mx-4">
               <Link to="/certificates" onClick={() => setIsOpen(false)}>Certificate</Link>
             </li>
-            <li className="nav-item mx-4">
+            <li className="nav-item navigation-links mx-4">
               <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
             </li>
           </ul>
 
-          <ul className="nav">
+          <ul className="nav nav-social-links">
             <li className="nav-item">
               <a
                 href="https://www.linkedin.com/in/kathanshupatil01/"
@@ -92,11 +87,6 @@ export default function Header() {
         </div>
       </div>
     </nav>
-
-
-
-
-
     </>
   );
 }

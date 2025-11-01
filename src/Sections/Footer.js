@@ -57,69 +57,67 @@ export default function Footer() {
               />
             </g>
           </svg>
- 
-            <div className="container-fluid footer-content">
 
-               <div className="row footer-row">
-                <div className="col-md-3">
-                   <h5>Residence</h5>
-              <i class="fa-solid fa-location-dot"></i>-xxxxx xxxx, Nagpur,
-              440XXX
-                </div>
-                <div className="col-md-3">
-                   <h5>Connect</h5>
-              <ul class="nav">
-                <li class="nav-item">
-                  <a
-                    href="https://www.linkedin.com/in/kathanshupatil01/"
-                    target="_blank"
-                  >
-                    <i class="fa-brands fa-linkedin"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://github.com/Kathanshu11" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    href="https://www.instagram.com/kathanshu.11/"
-                    target="_blank"
-                  >
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    href="https://www.facebook.com/kathanshu.patil.90"
-                    target="_blank"
-                  >
-                    <i class="fa-brands fa-facebook" />
-                  </a>
-                </li>
-              </ul>
-                </div>
-                <div className="col-md-3">
-                   <h5>Get in touch</h5>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=skathanshupatil11@gmail.com<"
-                target="_blank"
-                className="email"
-              >
-                <i class="fa-solid fa-envelope"></i>kathanshupatil11@gmail.com
-              </a>
-                </div>
-                <div className="col-md-3">
-                                <h5>Kathanshu Portfolio</h5>
-              <p className="mb-0">
-                &copy; {new Date().getFullYear()} All Rights Reserved.
-              </p>
-                </div>
+          <div className="container-fluid footer-content">
+            <div className="row footer-row">
+              <div className="col-md-3">
+                <h5>Residence</h5>
+                <i class="fa-solid fa-location-dot"></i>-xxxxx xxxx, Nagpur,
+                440XXX
               </div>
-        
+              <div className="col-md-3">
+                <h5>Connect</h5>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a
+                      href="https://www.linkedin.com/in/kathanshupatil01/"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="https://github.com/Kathanshu11" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="https://www.instagram.com/kathanshu.11/"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      href="https://www.facebook.com/kathanshu.patil.90"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-facebook" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-md-3">
+                <h5>Get in touch</h5>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=skathanshupatil11@gmail.com<"
+                  target="_blank"
+                  className="email"
+                >
+                  <i class="fa-solid fa-envelope"></i>kathanshupatil11@gmail.com
+                </a>
+              </div>
+              <div className="col-md-3">
+                <h5>Kathanshu Portfolio</h5>
+                <p className="mb-0">
+                  &copy; {new Date().getFullYear()} All Rights Reserved.
+                </p>
+              </div>
             </div>
           </div>
+        </div>
       </footer>
     </>
   );

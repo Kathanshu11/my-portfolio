@@ -45,11 +45,11 @@ export function Certificate() {
   ];
 
   return (
-    <div className="container">
+    <div className="container ">
       {certificates.map((cert, index) => (
         <div
           key={index}
-          className="image-container"
+          className="image-container py-4"
           ref={(el) => (containersRef.current[index] = el)}
         >
           <img src={cert.src} className="card-img-top" alt={cert.alt} />

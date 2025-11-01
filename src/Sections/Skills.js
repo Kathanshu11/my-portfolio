@@ -21,11 +21,15 @@ import bt from "../img/bootstrap.png";
 export default function Skills() {
   return (
     <>
-      <div className="d-flex justify-content-center">
+      {/* <div className="d-flex justify-content-center">
         <div class="ribbon">Skills</div>
-      </div>
+      </div> */}
 
-      <div className="container-fluid carsoul">
+       <div class="heading-sec">
+Skills
+       </div>
+
+      <div className="container carsoul">
         <div className="scrolling-wrapper">
           <div className="group">
             <div className="box">

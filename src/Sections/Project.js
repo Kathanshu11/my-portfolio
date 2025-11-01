@@ -14,7 +14,7 @@ import fi from "../img/ProjectImg/p5.png";
 import li from "../img/ProjectImg/l2.png";
 import lib from "../img/ProjectImg/l3.png";
 import liba from "../img/ProjectImg/l4.png";
-import libary from "../img/Libray.pdf"
+import libary from "../img/Libray.pdf";
 
 export default function Project() {
   const sectionsRef = useRef([]);
@@ -44,10 +44,11 @@ export default function Project() {
       {/* ------------------- E-Commerce ------------------- */}
       <div
         ref={(el) => (sectionsRef.current[0] = el)}
-        className="row projects-section"
+        className="row projects-section mt-5"
       >
-        <h1 className="text-center">E-Commerce (Shopping Site)</h1>
+      <h1 className="text-center">E-Commerce (Shopping Site)</h1>
         <div className="col-md-6">
+            
           <div
             id="carouselExampleFade"
             className="carousel slide carousel-fade"
@@ -88,46 +89,48 @@ export default function Project() {
               <span className="visually-hidden">Next</span>
             </button>
           </div>
-          <a href="#" className="btn btn-primary w-100 mt-2 mb-1">
+          <a
+            href="https://github.com/Kathanshu11/E-Commerce-Website"
+            className="btn btn-primary w-100 mt-2 mb-1"
+          >
             View here
           </a>
         </div>
         <div className="col-md-6">
           <p>
-           <b> Description :</b>
-              This project is a simple E-commerce web application developed
-              using Java Spring Boot with Spring Data JPA, Spring Security, and
-              MySQL. It features separate Admin and User sections:
-              <br />
-              <i class="fa-solid fa-arrow-right"></i> Admin Section: Admin can
-              add, update, delete, and view products, manage inventory, and
-              oversee the product catalog.
-              <br />
-              <i class="fa-solid fa-arrow-right"></i> User Section: Users can
-              browse products, view details, and interact with the online store.
-             <br />
-             <i class="fa-solid fa-arrow-right"></i> The project demonstrates
-             secure user authentication, role-based access control, and
-            database management using MySQL. It is designed as a foundational
-              shopping site suitable for learning full-stack Java development
-              and implementing basic e-commerce functionalities.
-              <br />
-               <i class="fa-solid fa-check"></i> Technologies Used:
-               <br />
-               <i class="fa-solid fa-check"></i> Java, Spring Boot
-               <br />
-               <i class="fa-solid fa-check"></i> Spring Web, Spring Data JPA
-               <br />
-               <i class="fa-solid fa-check"></i> Spring Security
-               <br />
-               <i class="fa-solid fa-check"></i> MySQL
-               <br />
-               <i class="fa-solid fa-check"></i> RESTful APIs
+            <b> Description :</b>
+            This project is a simple E-commerce web application developed using
+            Java Spring Boot with Spring Data JPA, Spring Security, and MySQL.
+            It features separate Admin and User sections:
+            <br />
+            <i class="fa-solid fa-arrow-right"></i> Admin Section: Admin can
+            add, update, delete, and view products, manage inventory, and
+            oversee the product catalog.
+            <br />
+            <i class="fa-solid fa-arrow-right"></i> User Section: Users can
+            browse products, view details, and interact with the online store.
+            <br />
+            <i class="fa-solid fa-arrow-right"></i> The project demonstrates
+            secure user authentication, role-based access control, and database
+            management using MySQL. It is designed as a foundational shopping
+            site suitable for learning full-stack Java development and
+            implementing basic e-commerce functionalities.
+            <br />
+            <i class="fa-solid fa-check"></i> Technologies Used:
+            <br />
+            <i class="fa-solid fa-check"></i> Java, Spring Boot
+            <br />
+            <i class="fa-solid fa-check"></i> Spring Web, Spring Data JPA
+            <br />
+            <i class="fa-solid fa-check"></i> Spring Security
+            <br />
+            <i class="fa-solid fa-check"></i> MySQL
+            <br />
+            <i class="fa-solid fa-check"></i> RESTful APIs
           </p>
         </div>
       </div>
 
-      
       {/* ------------------- Portfolio ------------------- */}
       <div
         ref={(el) => (sectionsRef.current[1] = el)}
@@ -175,36 +178,38 @@ export default function Project() {
               <span className="visually-hidden">Next</span>
             </button>
           </div>
-          <a href="#" className="btn btn-primary w-100 mt-2 mb-1">
+          <a
+            href="https://github.com/Kathanshu11/my-portfolio"
+            className="btn btn-primary w-100 mt-2 mb-1"
+          >
             View here
           </a>
         </div>
         <div className="col-md-6">
           <p>
-             <b> Description:</b>
-               <br />
-               <i class="fa-solid fa-check"></i> A responsive portfolio website
-               built using React.js and React DOM to showcase my skills,
-               projects, and experience.
-               <br />
-               <i class="fa-solid fa-check"></i> Includes dynamic sections like
-               Home, About, Skills, Projects, and Contact for easy navigation.
-               <br />
-               <i class="fa-solid fa-check"></i> Integrated EmailJS to enable
-               direct email communication through a functional contact form.
-               <br />
-               <i class="fa-solid fa-check"></i> Designed with a modern UI/UX and
-               smooth transitions for a professional look.
-               <br />
-               <i class="fa-solid fa-check"></i> Demonstrates strong
-               understanding of React components, state management, and front-end
-               development.
-               <br />
-               <i class="fa-solid fa-check"></i> Optimized for both desktop and
-               mobile devices for a seamless user experience.
-               <br />
-               <b> Technologies Used:</b>
-               React.js, React DOM, EmailJS, HTML5, CSS3, JavaScript, Bootstrap
+            <b> Description:</b>
+            <br />
+            <i class="fa-solid fa-check"></i> A responsive portfolio website
+            built using React.js and React DOM to showcase my skills, projects,
+            and experience.
+            <br />
+            <i class="fa-solid fa-check"></i> Includes dynamic sections like
+            Home, About, Skills, Projects, and Contact for easy navigation.
+            <br />
+            <i class="fa-solid fa-check"></i> Integrated EmailJS to enable
+            direct email communication through a functional contact form.
+            <br />
+            <i class="fa-solid fa-check"></i> Designed with a modern UI/UX and
+            smooth transitions for a professional look.
+            <br />
+            <i class="fa-solid fa-check"></i> Demonstrates strong understanding
+            of React components, state management, and front-end development.
+            <br />
+            <i class="fa-solid fa-check"></i> Optimized for both desktop and
+            mobile devices for a seamless user experience.
+            <br />
+            <b> Technologies Used:</b>
+            React.js, React DOM, EmailJS, HTML5, CSS3, JavaScript, Bootstrap
           </p>
         </div>
       </div>
@@ -274,11 +279,10 @@ export default function Project() {
             Java (Core Java) <br /> <i class="fa-solid fa-check"></i>{" "}
             Object-Oriented Programming (OOP) <br />{" "}
             <i class="fa-solid fa-check"></i> File Handling (for data storage)
-            <br /> <i class="fa-solid fa-check"></i> Collections Framework 
+            <br /> <i class="fa-solid fa-check"></i> Collections Framework
           </p>
         </div>
       </div>
     </div>
   );
 }
-

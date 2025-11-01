@@ -31,7 +31,7 @@ export default function About() {
   }, []);
 
   return (
-    <div className="container pt-5 pb-5">
+    <div className="container about-section">
       <div className="row align-items-center">
         <div
           className={`col-md-6 fade-in ${textVisible ? "visible" : ""}`}

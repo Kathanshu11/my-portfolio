@@ -62,9 +62,13 @@ export default function Form() {
         <div className="container form">
           {showForm && (
             <form id="contact-form" onSubmit={sendEmail}>
-              <div className="d-flex justify-content-center mx-5 ">
+              {/* <div className="d-flex justify-content-center mx-5 ">
                 <div className="ribbon">Contact</div>
-              </div>
+              </div> */}
+              
+       <div class="heading-sec">
+Contact Me
+       </div>
 
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">

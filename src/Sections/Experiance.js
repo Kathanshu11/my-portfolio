@@ -9,7 +9,7 @@ export default function Experiance() {
           if (entry.isIntersecting) {
             entry.target.classList.add("show");
             observer.unobserve(entry.target);
-          }else {
+          } else {
             entry.target.classList.remove("show");
           }
         });
@@ -29,11 +29,27 @@ export default function Experiance() {
       year: "2016-2017",
       title: "Secondary School Certificate",
       desc: "Cgpa 6.8",
+      about: (
+        <>
+          <h6>
+            <i class="fa-regular fa-circle-check"></i>Built a strong academic
+            foundation and essential learning skills
+          </h6>
+        </>
+      ),
     },
     {
       year: "2018-2019",
       title: "Higher School Certificate",
       desc: "Cgpa 5.5",
+      about: (
+        <>
+          <h6>
+            <i class="fa-regular fa-circle-check"></i>Focused on advanced
+            studies and personal skill development
+          </h6>
+        </>
+      ),
     },
     {
       year: "2019-2023",
@@ -43,13 +59,29 @@ export default function Experiance() {
           Nagpur University <br /> Cgpa 6.7
         </>
       ),
+      about: (
+        <>
+          <h6>
+            <i class="fa-regular fa-circle-check"></i>Graduated in 2023 with a
+            focus on academic growth and practical learning
+          </h6>
+        </>
+      ),
     },
     {
       year: "2023-2025",
       title: "Master of Computer Application",
       desc: (
         <>
-          Nagpur University <br />  Cgpa 6.7
+          Nagpur University <br /> Cgpa 6.7
+        </>
+      ),
+      about: (
+        <>
+          <h6>
+            <i class="fa-regular fa-circle-check"></i>Pursuing advanced studies
+            in software development, data systems, and emerging technologies
+          </h6>
         </>
       ),
     },
@@ -57,14 +89,25 @@ export default function Experiance() {
       year: "Jan-July-25",
       title: "Internship",
       desc: "Java full stack Developer",
+      about: (
+        <>
+          <h6>
+            <i class="fa-regular fa-circle-check"></i>Gained hands-on experience
+            in front-end and back-end development, building dynamic and
+            efficient web applications
+          </h6>
+        </>
+      ),
     },
   ];
 
   return (
     <>
-      <div className="d-flex justify-content-center my-4">
+      {/* <div className="d-flex justify-content-center my-4">
         <div className="ribbon">Experience</div>
-      </div>
+      </div> */}
+
+      <div class="heading-sec">Experience</div>
 
       <div className="experience">
         <div className="experience-container">
@@ -77,9 +120,10 @@ export default function Experiance() {
               <div className="connector-line"></div>
               <div className="card ex-cards" style={{ width: "18rem" }}>
                 <div className="card-body">
-                  <h6 className="card-subtitle mb-2 text-muted">{exp.year}</h6>
-                  <h5 className="card-title">{exp.title}</h5>
-                  <p className="ex-content">{exp.desc}</p>
+                  <p className="card-subtitle mb-2 text-muted">{exp.year}</p>
+                  <h1 className="card-title">{exp.title}</h1>
+                  <h6 className="ex-content">{exp.desc}</h6>
+                  <h6>{exp.about}</h6>
                 </div>
               </div>
             </div>
